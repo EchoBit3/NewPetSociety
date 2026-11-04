@@ -9,7 +9,7 @@ cuando arranca.
 ## Qué era Pet Society
 
 Un juego social en el que cada jugador cuidaba una mascota. El sistema permitía elegir nombre,
-sexo, color y rasgos físicos, y la vida diaria consistía en bañarla, cepillarla, acariciarla y
+género, color y rasgos físicos, y la vida diaria consistía en bañarla, cepillarla, acariciarla y
 alimentarla. Con las monedas ganadas se compraban muebles, ropa y objetos para la casa, y todo
 se compartía con los amigos de la red social.
 
@@ -25,9 +25,9 @@ solo archivo del juego.
 
 ## Estado actual
 
-El proyecto está en **fase de planificación y documentación**. No hay todavía código de servidor
-ni versiones publicadas para descargar: primero se define el alcance, la arquitectura y el orden
-de las etapas.
+El proyecto tiene la **documentación de arquitectura publicada** y todavía no tiene código de
+servidor: primero se define el alcance, la arquitectura y el orden de las etapas. No hay versiones
+para descargar ni instrucciones de instalación.
 
 Decisiones ya cerradas:
 
@@ -83,9 +83,6 @@ El trabajo del emulador es reproducir ese intercambio con exactitud: si cambia e
 byte o el tamaño de un campo, el cliente falla. Por eso la fase de protocolo se cierra con
 pruebas que escriben y vuelven a leer cada estructura.
 
-Hay una explicación pública del esquema en un juego similar
-[aquí](https://nettech.fandom.com/wiki/SimCity_Social).
-
 ## Etapas
 
 1. Visión, arquitectura, reglas y plan.
@@ -97,10 +94,10 @@ Hay una explicación pública del esquema en un juego similar
 
 ## Reglas de contribución
 
-- Un commit por tema: los archivos que resuelven lo mismo van juntos y ningún archivo se toca en
-  dos commits. Un mensaje por commit, describiendo el conjunto.
+- Un commit por entrada visible: cada archivo de la raíz va solo y cada documento de `docs/` va con
+  sus diagramas.
 - Mensajes en español, en infinitivo, de una línea y sin punto final, y ninguno se repite
-  (ejemplo: `Agregar articulos de paquete faltantes de las tiendas`).
+  (ejemplo: `Agregar la portada del emulador`).
 - Sin comentarios decorativos ni líneas de separación en ningún archivo.
 - Nada de credenciales, tokens, partidas reales de jugadores ni datos personales.
 
