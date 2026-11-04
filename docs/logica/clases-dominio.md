@@ -21,7 +21,8 @@ público; la barra inclinada marca un atributo derivado, como `/nivel`, que se c
 El rombo relleno marca composición: el estado de cuidado, la habitación, el mueble y el objeto de
 inventario no existen sin su dueño, así que no se crean ni se borran por separado. Las líneas sin
 rombo son asociaciones: el catálogo define qué objeto puede comprarse, pero no depende de la
-mascota; una amistad, una visita y un regalo apuntan al jugador y sobreviven a la mascota.
+mascota; una amistad apunta al jugador, y la visita y el regalo cuelgan de la amistad porque solo
+se visita o se regala a un amigo. Las tres sobreviven a la mascota.
 
 El cuidado guarda tres valores y cuatro sellos de tiempo, uno por necesidad. Con un solo sello,
 bañar a la mascota reiniciaría también el hambre y el sueño, y el estado dependería del último
