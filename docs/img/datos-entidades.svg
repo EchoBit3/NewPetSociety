@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="820" viewBox="0 0 780 820" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">
+  <rect width="780" height="820" fill="#FFFFFF"/>
+
+  <rect x="30" y="30" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="40" y="48">PLAYER</text>
+  <rect x="30" y="56" width="200" height="108" fill="#FFFFFF" stroke="#111827"/>
+  <text x="40" y="74">id</text><text x="148" y="74">varchar</text><text x="224" y="74" text-anchor="end" font-size="10">PK</text>
+  <text x="40" y="94">nombre</text><text x="148" y="94">varchar</text>
+  <text x="40" y="114">monedas</text><text x="148" y="114">integer</text>
+  <text x="40" y="134">efectivo</text><text x="148" y="134">integer</text>
+  <text x="40" y="154">ultima_entrada</text><text x="148" y="154">timestamp</text>
+
+  <rect x="280" y="30" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="290" y="48">PET</text>
+  <rect x="280" y="56" width="200" height="148" fill="#FFFFFF" stroke="#111827"/>
+  <text x="290" y="74">id</text><text x="398" y="74">varchar</text><text x="474" y="74" text-anchor="end" font-size="10">PK</text>
+  <text x="290" y="94">player_id</text><text x="398" y="94">varchar</text><text x="474" y="94" text-anchor="end" font-size="10">FK</text>
+  <text x="290" y="114">nombre</text><text x="398" y="114">varchar</text>
+  <text x="290" y="134">genero</text><text x="398" y="134">varchar</text>
+  <text x="290" y="154">color</text><text x="398" y="154">integer</text>
+  <text x="290" y="174">puntos</text><text x="398" y="174">integer</text>
+  <text x="290" y="194">cumpleanios</text><text x="398" y="194">date</text>
+
+  <rect x="530" y="30" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="540" y="48">CARE</text>
+  <rect x="530" y="56" width="200" height="168" fill="#FFFFFF" stroke="#111827"/>
+  <text x="540" y="74">pet_id</text><text x="648" y="74">varchar</text><text x="724" y="74" text-anchor="end" font-size="10">PK FK</text>
+  <text x="540" y="94">salud</text><text x="648" y="94">integer</text>
+  <text x="540" y="114">animo</text><text x="648" y="114">integer</text>
+  <text x="540" y="134">higiene</text><text x="648" y="134">integer</text>
+  <text x="540" y="154">ultima_comida</text><text x="648" y="154">timestamp</text>
+  <text x="540" y="174">ultimo_bano</text><text x="648" y="174">timestamp</text>
+  <text x="540" y="194">ultimo_juego</text><text x="648" y="194">timestamp</text>
+  <text x="540" y="214">ultimo_descanso</text><text x="648" y="214">timestamp</text>
+
+  <rect x="30" y="230" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="40" y="248">AMISTAD</text>
+  <rect x="30" y="256" width="200" height="108" fill="#FFFFFF" stroke="#111827"/>
+  <text x="40" y="274">id</text><text x="148" y="274">varchar</text><text x="224" y="274" text-anchor="end" font-size="10">PK</text>
+  <text x="40" y="294">jugador_id</text><text x="148" y="294">varchar</text><text x="224" y="294" text-anchor="end" font-size="10">FK</text>
+  <text x="40" y="314">amigo_id</text><text x="148" y="314">varchar</text><text x="224" y="314" text-anchor="end" font-size="10">FK</text>
+  <text x="40" y="334">desde</text><text x="148" y="334">date</text>
+  <text x="40" y="354">estado</text><text x="148" y="354">varchar</text>
+
+  <rect x="30" y="440" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="40" y="458">VISITA</text>
+  <rect x="30" y="466" width="200" height="88" fill="#FFFFFF" stroke="#111827"/>
+  <text x="40" y="484">id</text><text x="148" y="484">varchar</text><text x="224" y="484" text-anchor="end" font-size="10">PK</text>
+  <text x="40" y="504">amistad_id</text><text x="148" y="504">varchar</text><text x="224" y="504" text-anchor="end" font-size="10">FK</text>
+  <text x="40" y="524">fecha</text><text x="148" y="524">timestamp</text>
+  <text x="40" y="544">recompensa</text><text x="148" y="544">integer</text>
+
+  <rect x="30" y="620" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="40" y="638">REGALO</text>
+  <rect x="30" y="646" width="200" height="108" fill="#FFFFFF" stroke="#111827"/>
+  <text x="40" y="664">id</text><text x="148" y="664">varchar</text><text x="224" y="664" text-anchor="end" font-size="10">PK</text>
+  <text x="40" y="684">amistad_id</text><text x="148" y="684">varchar</text><text x="224" y="684" text-anchor="end" font-size="10">FK</text>
+  <text x="40" y="704">item_id</text><text x="148" y="704">varchar</text><text x="224" y="704" text-anchor="end" font-size="10">FK</text>
+  <text x="40" y="724">fecha</text><text x="148" y="724">timestamp</text>
+  <text x="40" y="744">estado</text><text x="148" y="744">varchar</text>
+
+  <rect x="280" y="250" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="290" y="268">INVENTORY_ITEM</text>
+  <rect x="280" y="276" width="200" height="128" fill="#FFFFFF" stroke="#111827"/>
+  <text x="290" y="294">id</text><text x="398" y="294">varchar</text><text x="474" y="294" text-anchor="end" font-size="10">PK</text>
+  <text x="290" y="314">pet_id</text><text x="398" y="314">varchar</text><text x="474" y="314" text-anchor="end" font-size="10">FK</text>
+  <text x="290" y="334">item_id</text><text x="398" y="334">varchar</text><text x="474" y="334" text-anchor="end" font-size="10">FK</text>
+  <text x="290" y="354">cantidad</text><text x="398" y="354">integer</text>
+  <text x="290" y="374">posicion</text><text x="398" y="374">integer</text>
+
+  <rect x="280" y="460" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="290" y="478">ITEM</text>
+  <rect x="280" y="486" width="200" height="128" fill="#FFFFFF" stroke="#111827"/>
+  <text x="290" y="504">id</text><text x="398" y="504">varchar</text><text x="474" y="504" text-anchor="end" font-size="10">PK</text>
+  <text x="290" y="524">categoria</text><text x="398" y="524">varchar</text>
+  <text x="290" y="544">precio</text><text x="398" y="544">integer</text>
+  <text x="290" y="564">moneda</text><text x="398" y="564">varchar</text>
+  <text x="290" y="584">nivel_requerido</text><text x="398" y="584">integer</text>
+
+  <rect x="530" y="250" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="540" y="268">ROOM</text>
+  <rect x="530" y="276" width="200" height="128" fill="#FFFFFF" stroke="#111827"/>
+  <text x="540" y="294">id</text><text x="648" y="294">varchar</text><text x="724" y="294" text-anchor="end" font-size="10">PK</text>
+  <text x="540" y="314">pet_id</text><text x="648" y="314">varchar</text><text x="724" y="314" text-anchor="end" font-size="10">FK</text>
+  <text x="540" y="334">tipo</text><text x="648" y="334">varchar</text>
+  <text x="540" y="354">papel_tapiz</text><text x="648" y="354">integer</text>
+  <text x="540" y="374">piso</text><text x="648" y="374">integer</text>
+
+  <rect x="530" y="460" width="200" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="540" y="478">FURNITURE</text>
+  <rect x="530" y="486" width="200" height="148" fill="#FFFFFF" stroke="#111827"/>
+  <text x="540" y="504">id</text><text x="648" y="504">varchar</text><text x="724" y="504" text-anchor="end" font-size="10">PK</text>
+  <text x="540" y="524">room_id</text><text x="648" y="524">varchar</text><text x="724" y="524" text-anchor="end" font-size="10">FK</text>
+  <text x="540" y="544">item_id</text><text x="648" y="544">varchar</text><text x="724" y="544" text-anchor="end" font-size="10">FK</text>
+  <text x="540" y="564">posicion_x</text><text x="648" y="564">integer</text>
+  <text x="540" y="584">posicion_y</text><text x="648" y="584">integer</text>
+  <text x="540" y="604">rotacion</text><text x="648" y="604">integer</text>
+
+  <line x1="230" y1="90" x2="280" y2="90" stroke="#111827"/>
+  <text x="236" y="83" font-size="10">1</text>
+  <text x="274" y="83" font-size="10">*</text>
+
+  <line x1="480" y1="70" x2="530" y2="70" stroke="#111827"/>
+  <text x="486" y="63" font-size="10">1</text>
+  <text x="524" y="63" font-size="10">1</text>
+
+  <path d="M430,204 V234 H630 V250" fill="none" stroke="#111827"/>
+  <text x="436" y="226" font-size="10">1</text>
+  <text x="624" y="246" font-size="10">*</text>
+
+  <line x1="380" y1="204" x2="380" y2="250" stroke="#111827"/>
+  <text x="386" y="222" font-size="10">1</text>
+  <text x="386" y="244" font-size="10">*</text>
+
+  <line x1="380" y1="404" x2="380" y2="460" stroke="#111827"/>
+  <text x="386" y="422" font-size="10">*</text>
+  <text x="386" y="454" font-size="10">1</text>
+
+  <line x1="480" y1="500" x2="530" y2="500" stroke="#111827"/>
+  <text x="486" y="493" font-size="10">*</text>
+  <text x="524" y="493" font-size="10">1</text>
+
+  <line x1="630" y1="404" x2="630" y2="460" stroke="#111827"/>
+  <text x="636" y="422" font-size="10">1</text>
+  <text x="636" y="454" font-size="10">*</text>
+
+  <line x1="130" y1="164" x2="130" y2="230" stroke="#111827"/>
+  <text x="136" y="182" font-size="10">1</text>
+  <text x="136" y="224" font-size="10">*</text>
+
+  <line x1="130" y1="364" x2="130" y2="440" stroke="#111827"/>
+  <text x="136" y="382" font-size="10">1</text>
+  <text x="136" y="434" font-size="10">*</text>
+
+  <path d="M30,300 H15 V700 H30" fill="none" stroke="#111827"/>
+  <text x="19" y="294" font-size="10">1</text>
+  <text x="19" y="694" font-size="10">*</text>
+
+  <path d="M230,700 H250 V560 H280" fill="none" stroke="#111827"/>
+  <text x="236" y="694" font-size="10">*</text>
+  <text x="274" y="554" font-size="10">1</text>
+</svg>

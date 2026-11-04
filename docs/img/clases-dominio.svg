@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1230" height="960" viewBox="0 0 1230 960" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">
+  <rect width="1230" height="960" fill="#FFFFFF"/>
+
+  <rect x="70" y="40" width="350" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="80" y="57">Jugador</text>
+  <rect x="70" y="66" width="350" height="128" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="84">- id: texto</text>
+  <text x="80" y="104">- nombre: texto</text>
+  <text x="80" y="124">- monedas: entero</text>
+  <text x="80" y="144">- efectivo: entero</text>
+  <text x="80" y="164">- visitas: entero</text>
+  <text x="80" y="184">- regalosEnviados: entero</text>
+  <rect x="70" y="194" width="350" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="212">+ pagar(monto: entero, moneda: texto): vacio</text>
+  <text x="80" y="232">+ cobrar(monto: entero, moneda: texto): vacio</text>
+  <rect x="70" y="242" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="260">Responde por la identidad y el saldo.</text>
+
+  <rect x="500" y="40" width="300" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="510" y="57">Mascota</text>
+  <rect x="500" y="66" width="300" height="128" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="84">- nombre: texto</text>
+  <text x="510" y="104">- genero: texto</text>
+  <text x="510" y="124">- color: entero</text>
+  <text x="510" y="144">- puntos: entero</text>
+  <text x="510" y="164">- /nivel: entero</text>
+  <text x="510" y="184">- cumpleanios: fecha</text>
+  <rect x="500" y="194" width="300" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="212">+ cuidar(accion: texto): vacio</text>
+  <text x="510" y="232">+ sumarPuntos(cantidad: entero): vacio</text>
+  <rect x="500" y="242" width="300" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="260">Reune cuidado, casa e inventario.</text>
+
+  <rect x="870" y="40" width="320" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="880" y="57">EstadoCuidado</text>
+  <rect x="870" y="66" width="320" height="148" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="84">- salud: entero</text>
+  <text x="880" y="104">- animo: entero</text>
+  <text x="880" y="124">- higiene: entero</text>
+  <text x="880" y="144">- ultimaComida: fecha</text>
+  <text x="880" y="164">- ultimoBano: fecha</text>
+  <text x="880" y="184">- ultimoJuego: fecha</text>
+  <text x="880" y="204">- ultimoDescanso: fecha</text>
+  <rect x="870" y="214" width="320" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="232">+ avanzar(hoy: fecha): vacio</text>
+  <text x="880" y="252">+ saciar(): vacio</text>
+  <rect x="870" y="262" width="320" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="280">Cambia sola con el tiempo transcurrido.</text>
+
+  <rect x="500" y="340" width="300" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="510" y="357">InventarioItem</text>
+  <rect x="500" y="366" width="300" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="384">- cantidad: entero</text>
+  <text x="510" y="404">- posicion: entero</text>
+  <rect x="500" y="414" width="300" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="432">+ agregar(cantidad: entero): vacio</text>
+  <text x="510" y="452">+ usar(cantidad: entero): vacio</text>
+  <rect x="500" y="462" width="300" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="480">Descuenta y repone existencias.</text>
+
+  <rect x="870" y="320" width="320" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="880" y="337">Habitacion</text>
+  <rect x="870" y="346" width="320" height="68" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="364">- tipo: texto</text>
+  <text x="880" y="384">- papelTapiz: entero</text>
+  <text x="880" y="404">- piso: entero</text>
+  <rect x="870" y="414" width="320" height="48" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="432">+ colocar(mueble: Mueble): vacio</text>
+  <text x="880" y="452">+ quitar(mueble: Mueble): vacio</text>
+  <rect x="870" y="462" width="320" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="480">Ordena los muebles de un cuarto.</text>
+
+  <rect x="870" y="600" width="320" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="880" y="617">Mueble</text>
+  <rect x="870" y="626" width="320" height="68" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="644">- posicionX: entero</text>
+  <text x="880" y="664">- posicionY: entero</text>
+  <text x="880" y="684">- rotacion: entero</text>
+  <rect x="870" y="694" width="320" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="712">+ mover(x: entero, y: entero): vacio</text>
+  <rect x="870" y="722" width="320" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="880" y="740">Ubica un objeto dentro del cuarto.</text>
+
+  <rect x="70" y="330" width="350" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="80" y="347">Visita</text>
+  <rect x="70" y="356" width="350" height="68" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="374">- amigo: Jugador</text>
+  <text x="80" y="394">- fecha: fecha</text>
+  <text x="80" y="414">- recompensa: entero</text>
+  <rect x="70" y="424" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="442">+ otorgar(): entero</text>
+  <rect x="70" y="452" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="470">Deja constancia de la visita y su premio.</text>
+
+  <rect x="70" y="530" width="350" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="80" y="547">Amistad</text>
+  <rect x="70" y="556" width="350" height="68" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="574">- amigo: Jugador</text>
+  <text x="80" y="594">- desde: fecha</text>
+  <text x="80" y="614">- estado: texto</text>
+  <rect x="70" y="624" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="642">+ vigente(hoy: fecha): booleano</text>
+  <rect x="70" y="652" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="670">Decide quien puede visitar y regalar.</text>
+
+  <rect x="70" y="730" width="350" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="80" y="747">Regalo</text>
+  <rect x="70" y="756" width="350" height="88" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="774">- destinatario: Jugador</text>
+  <text x="80" y="794">- objeto: Objeto</text>
+  <text x="80" y="814">- fecha: fecha</text>
+  <text x="80" y="834">- estado: texto</text>
+  <rect x="70" y="844" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="862">+ entregar(): vacio</text>
+  <rect x="70" y="872" width="350" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="80" y="890">Mueve un objeto entre dos jugadores.</text>
+
+  <rect x="500" y="600" width="300" height="26" fill="#E8F0FE" stroke="#111827"/>
+  <text x="510" y="617">Objeto</text>
+  <rect x="500" y="626" width="300" height="108" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="644">- id: texto</text>
+  <text x="510" y="664">- categoria: texto</text>
+  <text x="510" y="684">- precio: entero</text>
+  <text x="510" y="704">- moneda: texto</text>
+  <text x="510" y="724">- nivelRequerido: entero</text>
+  <rect x="500" y="734" width="300" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="752">+ disponible(nivel: entero): booleano</text>
+  <rect x="500" y="762" width="300" height="28" fill="#FFFFFF" stroke="#111827"/>
+  <text x="510" y="780">Fija que se compra y a que precio.</text>
+
+  <line x1="420" y1="120" x2="500" y2="120" stroke="#111827"/>
+  <text x="426" y="114">1</text>
+  <text x="494" y="114" text-anchor="end">1</text>
+
+  <line x1="800" y1="120" x2="870" y2="120" stroke="#111827"/>
+  <polygon points="800,120 812,114 824,120 812,126" fill="#111827"/>
+  <text x="818" y="110" text-anchor="middle">1</text>
+  <text x="864" y="114" text-anchor="end">1</text>
+
+  <line x1="650" y1="270" x2="650" y2="340" stroke="#111827"/>
+  <polygon points="650,270 644,282 650,294 656,282" fill="#111827"/>
+  <text x="662" y="286">1</text>
+  <text x="644" y="336" text-anchor="end">*</text>
+
+  <line x1="650" y1="490" x2="650" y2="600" stroke="#111827"/>
+  <text x="662" y="504">*</text>
+  <text x="644" y="594" text-anchor="end">1</text>
+
+  <path d="M800,220 H835 V380 H870" fill="none" stroke="#111827"/>
+  <polygon points="800,220 812,214 824,220 812,226" fill="#111827"/>
+  <text x="830" y="212">1</text>
+  <text x="864" y="374" text-anchor="end">*</text>
+
+  <line x1="1030" y1="490" x2="1030" y2="600" stroke="#111827"/>
+  <polygon points="1030,490 1024,502 1030,514 1036,502" fill="#111827"/>
+  <text x="1042" y="504">1</text>
+  <text x="1024" y="594" text-anchor="end">*</text>
+
+  <line x1="200" y1="270" x2="200" y2="330" stroke="#111827"/>
+  <text x="210" y="286">1</text>
+  <text x="190" y="324" text-anchor="end">*</text>
+
+  <path d="M420,600 H460 V230 H420" fill="none" stroke="#111827"/>
+  <text x="426" y="594">*</text>
+  <text x="414" y="224" text-anchor="end">1</text>
+
+  <path d="M70,800 H40 V250 H70" fill="none" stroke="#111827"/>
+  <text x="66" y="794" text-anchor="end">*</text>
+  <text x="64" y="244" text-anchor="end">1</text>
+
+  <line x1="420" y1="770" x2="500" y2="770" stroke="#111827"/>
+  <text x="426" y="764">*</text>
+  <text x="494" y="764" text-anchor="end">1</text>
+</svg>
