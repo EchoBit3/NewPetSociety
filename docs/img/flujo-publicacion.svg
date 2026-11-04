@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="900" height="430" fill="#FFFFFF"/>
+
+  <rect x="20" y="20" width="140" height="40" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="90" y="45" text-anchor="middle">Desarrollo</text>
+  <line x1="90" y1="60" x2="90" y2="390" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="220" y="20" width="140" height="40" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="290" y="39" text-anchor="middle" font-size="12">Rama</text>
+  <text x="290" y="53" text-anchor="middle" font-size="12">principal</text>
+  <line x1="290" y1="60" x2="290" y2="390" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="420" y="20" width="140" height="40" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="490" y="39" text-anchor="middle" font-size="12">Etiqueta</text>
+  <text x="490" y="53" text-anchor="middle" font-size="12">de versión</text>
+  <line x1="490" y1="60" x2="490" y2="390" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="620" y="20" width="140" height="40" rx="8" fill="#FCE7F3" stroke="#111827"/>
+  <text x="690" y="45" text-anchor="middle">Jugador</text>
+  <line x1="690" y1="60" x2="690" y2="390" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <path d="M90,85 H170 V115 H90" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="180" y="105" font-size="11">Suite completa y revisión de secretos</text>
+
+  <line x1="90" y1="150" x2="290" y2="150" stroke="#111827" marker-end="url(#a)"/>
+  <text x="100" y="142" font-size="11">Integra los commits revisados</text>
+
+  <line x1="90" y1="195" x2="290" y2="195" stroke="#111827" marker-end="url(#a)"/>
+  <text x="100" y="187" font-size="11">Commit de versión y de documento de cambios</text>
+
+  <line x1="290" y1="240" x2="490" y2="240" stroke="#111827" marker-end="url(#a)"/>
+  <text x="300" y="232" font-size="11">Publicar etiqueta con resumen</text>
+
+  <line x1="490" y1="285" x2="690" y2="285" stroke="#111827" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text x="500" y="277" font-size="11">Anuncio del parche</text>
+
+  <path d="M690,320 H760 V355 H690" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="660" y="342" text-anchor="end" font-size="11">Actualiza y juega</text>
+</svg>

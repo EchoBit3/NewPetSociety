@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="860" viewBox="0 0 920 860" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="920" height="860" fill="#FFFFFF"/>
+
+  <rect x="70" y="40" width="320" height="44" rx="22" fill="#EDE9FE" stroke="#111827"/>
+  <text x="230" y="67" text-anchor="middle">Cambio planificado</text>
+
+  <rect x="70" y="110" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="137" text-anchor="middle">Ejecutar el arnes de reglas</text>
+
+  <rect x="70" y="180" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="207" text-anchor="middle">Leer lo que ya existe</text>
+
+  <rect x="70" y="250" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="277" text-anchor="middle">Elegir el cambio más pequeño</text>
+
+  <rect x="70" y="320" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="347" text-anchor="middle">Verificar con pruebas</text>
+
+  <polygon points="230,380 390,425 230,470 70,425" fill="#FFF4CC" stroke="#111827"/>
+  <text x="230" y="430" text-anchor="middle">Pasan las pruebas</text>
+
+  <polygon points="230,490 390,535 230,580 70,535" fill="#FFF4CC" stroke="#111827"/>
+  <text x="230" y="530" text-anchor="middle">Requiere el</text>
+  <text x="230" y="546" text-anchor="middle">cliente real</text>
+
+  <rect x="70" y="620" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="647" text-anchor="middle">Probar en el navegador</text>
+
+  <rect x="70" y="690" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="230" y="717" text-anchor="middle">Anotar decisión o corrección</text>
+
+  <rect x="70" y="760" width="320" height="44" rx="22" fill="#EDE9FE" stroke="#111827"/>
+  <text x="230" y="787" text-anchor="middle">Registrar el cambio en un commit</text>
+
+  <rect x="530" y="40" width="320" height="44" rx="22" fill="#EDE9FE" stroke="#111827"/>
+  <text x="690" y="67" text-anchor="middle">Fallo reportado</text>
+
+  <rect x="530" y="110" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="690" y="137" text-anchor="middle">Reproducir con una prueba que falla</text>
+
+  <rect x="530" y="180" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="690" y="207" text-anchor="middle">Cortar desde la etiqueta afectada</text>
+
+  <rect x="530" y="250" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="690" y="277" text-anchor="middle">Aplicar el cambio mínimo</text>
+
+  <rect x="530" y="320" width="320" height="44" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="690" y="347" text-anchor="middle">Publicar el parche</text>
+
+  <rect x="530" y="390" width="320" height="44" rx="22" fill="#EDE9FE" stroke="#111827"/>
+  <text x="690" y="417" text-anchor="middle">Registrar el incidente en la memoria</text>
+
+  <line x1="230" y1="84" x2="230" y2="110" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="230" y1="154" x2="230" y2="180" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="230" y1="224" x2="230" y2="250" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="230" y1="294" x2="230" y2="320" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="230" y1="364" x2="230" y2="380" stroke="#111827" marker-end="url(#a)"/>
+
+  <path d="M70,425 H30 V272 H70" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="52" y="415" text-anchor="end" font-size="11">no</text>
+
+  <line x1="230" y1="470" x2="230" y2="490" stroke="#111827" marker-end="url(#a)"/>
+  <text x="242" y="485" font-size="11">si</text>
+
+  <path d="M390,535 H460 V642 H390" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="445" y="527" text-anchor="middle" font-size="11">si</text>
+
+  <path d="M70,535 H30 V712 H70" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="52" y="525" text-anchor="end" font-size="11">no</text>
+
+  <line x1="230" y1="664" x2="230" y2="690" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="230" y1="734" x2="230" y2="760" stroke="#111827" marker-end="url(#a)"/>
+
+  <line x1="690" y1="84" x2="690" y2="110" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="690" y1="154" x2="690" y2="180" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="690" y1="224" x2="690" y2="250" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="690" y1="294" x2="690" y2="320" stroke="#111827" marker-end="url(#a)"/>
+  <line x1="690" y1="354" x2="690" y2="390" stroke="#111827" marker-end="url(#a)"/>
+</svg>
