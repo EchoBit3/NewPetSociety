@@ -41,10 +41,33 @@ dominio se prueba con datos inventados.
 Supone que el ciclo de cambio ya dejó los commits en la rama principal; por eso no repite la
 lectura, las pruebas locales ni la anotación de decisiones.
 
+## Ramas
+
+`main` solo recibe cortes: lo que se entrega como versión. Ningún trabajo entra ahí directo.
+`develop` es la rama de integración y el destino normal de cada cambio; vive siempre en verde.
+
+| Rama | Vive | Nace de | Vuelve a |
+|---|---|---|---|
+| `main` | siempre | — | — |
+| `develop` | siempre | `main` | `main` en cada corte |
+| `feature/hN-nombre` | la fase Hn | `develop` | `develop` |
+| `fix/nombre` | hasta el parche | `develop` | `develop` |
+| `docs/nombre` | hasta la revisión | `develop` | `develop` |
+| `release/hN` | el corte | `develop` | `main` y `develop` |
+
+Reglas:
+
+- Una rama por cambio y se borra al integrar; el nombre va en minúsculas, con guion, y dice qué
+  entrega: `feature/h1-esqueleto`, `docs/protocolo`, `fix/lector-longitud`.
+- El número del hito en la rama de fase permite leer el avance en la lista de ramas.
+- `develop` pasa a `main` solo con un corte cerrado y verificado, nunca a mitad de una fase.
+- Nada de `--force` en `main` ni en `develop`.
+- Revisar un cambio es comparar su rama contra `develop`, no contra `main`.
+
 ## Reglas de la historia
 
 - Un commit por entrada visible: cada archivo de la raíz va solo, cada documento de `docs/` va con
   sus diagramas.
 - Mensajes en infinitivo, en español, una línea, sin punto final y sin repetirse entre commits.
 - Nada de reescribir historia ya publicada sin autorización explícita.
-- Todo commit publicado deja la rama principal ejecutable.
+- Todo commit publicado deja `develop` ejecutable; `main` solo recibe cortes.
