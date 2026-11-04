@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="240" viewBox="0 0 920 240" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <rect width="920" height="240" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="12" fill="#374151">orden de red: primero el byte más significativo</text>
+
+  <rect x="40" y="70" width="120" height="64" fill="#E8F0FE" stroke="#111827"/>
+  <text x="100" y="96" text-anchor="middle">encapsulación</text>
+  <text x="100" y="116" text-anchor="middle" font-size="11">uint8 · byte 0</text>
+
+  <rect x="160" y="70" width="160" height="64" fill="#E8F0FE" stroke="#111827"/>
+  <text x="240" y="96" text-anchor="middle">tipo de mensaje</text>
+  <text x="240" y="116" text-anchor="middle" font-size="11">uint8 · byte 1</text>
+
+  <rect x="320" y="70" width="170" height="64" fill="#E8F0FE" stroke="#111827"/>
+  <text x="405" y="96" text-anchor="middle">largo de sesión</text>
+  <text x="405" y="116" text-anchor="middle" font-size="11">uintvar · bytes 2 a 6</text>
+
+  <rect x="490" y="70" width="170" height="64" fill="#E8F0FE" stroke="#111827"/>
+  <text x="575" y="96" text-anchor="middle">sesión</text>
+  <text x="575" y="116" text-anchor="middle" font-size="11">UTF-8 · largo declarado</text>
+
+  <rect x="660" y="70" width="220" height="64" fill="#FFF4CC" stroke="#111827"/>
+  <text x="770" y="96" text-anchor="middle">contenido</text>
+  <text x="770" y="116" text-anchor="middle" font-size="11">según el tipo · hasta el final</text>
+
+  <path d="M490,148 V160 H880 V148" fill="none" stroke="#111827"/>
+  <text x="685" y="178" text-anchor="middle" font-size="11">tamaño variable</text>
+
+  <text x="40" y="210" font-size="11" fill="#374151">el largo de sesión declara cuántos bytes ocupa la sesión que sigue</text>
+</svg>

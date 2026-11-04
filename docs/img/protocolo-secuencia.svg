@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111827"/>
+    </marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#111827" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="540" fill="#FFFFFF"/>
+
+  <rect x="5" y="16" width="130" height="40" fill="#E8F0FE" stroke="#111827"/>
+  <text x="70" y="41" text-anchor="middle" font-size="12">Cliente en Ruffle</text>
+  <line x1="70" y1="56" x2="70" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="175" y="16" width="130" height="40" fill="#E8F0FE" stroke="#111827"/>
+  <text x="240" y="41" text-anchor="middle" font-size="12">Servidor HTTP</text>
+  <line x1="240" y1="56" x2="240" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="345" y="16" width="130" height="40" fill="#E8F0FE" stroke="#111827"/>
+  <text x="410" y="41" text-anchor="middle" font-size="12">Lector binario</text>
+  <line x1="410" y1="56" x2="410" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="515" y="16" width="130" height="40" fill="#FFF4CC" stroke="#111827"/>
+  <text x="580" y="41" text-anchor="middle" font-size="12">Enrutador</text>
+  <line x1="580" y1="56" x2="580" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="685" y="16" width="130" height="40" fill="#E6F4EA" stroke="#111827"/>
+  <text x="750" y="41" text-anchor="middle" font-size="12">Caso de uso</text>
+  <line x1="750" y1="56" x2="750" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="855" y="16" width="130" height="40" fill="#E6F4EA" stroke="#111827"/>
+  <text x="920" y="33" text-anchor="middle" font-size="12">Persistencia</text>
+  <text x="920" y="48" text-anchor="middle" font-size="12">y caché</text>
+  <line x1="920" y1="56" x2="920" y2="520" stroke="#111827" stroke-dasharray="4 4"/>
+
+  <rect x="66" y="106" width="8" height="406" fill="#FFFFFF" stroke="#111827"/>
+  <rect x="236" y="106" width="8" height="372" fill="#FFFFFF" stroke="#111827"/>
+  <rect x="406" y="141" width="8" height="337" fill="#FFFFFF" stroke="#111827"/>
+  <rect x="576" y="231" width="8" height="222" fill="#FFFFFF" stroke="#111827"/>
+  <rect x="746" y="321" width="8" height="102" fill="#FFFFFF" stroke="#111827"/>
+  <rect x="916" y="351" width="8" height="36" fill="#FFFFFF" stroke="#111827"/>
+
+  <line x1="70" y1="110" x2="240" y2="110" stroke="#111827" marker-end="url(#a)"/>
+  <text x="76" y="103" font-size="11">Envía bytes en orden de red</text>
+
+  <line x1="240" y1="145" x2="410" y2="145" stroke="#111827" marker-end="url(#a)"/>
+  <text x="246" y="138" font-size="11">Entrega el cuerpo sin interpretar</text>
+
+  <path d="M410,175 H470 V205 H410" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="476" y="195" font-size="11">Lee encapsulación, tipo y sesión</text>
+
+  <line x1="410" y1="235" x2="580" y2="235" stroke="#111827" marker-end="url(#a)"/>
+  <text x="416" y="228" font-size="11">Bombea el tipo con el lector posicionado</text>
+
+  <path d="M580,265 H640 V295 H580" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="646" y="285" font-size="11">Valida tipo conocido y sesión válida</text>
+
+  <line x1="580" y1="325" x2="750" y2="325" stroke="#111827" marker-end="url(#a)"/>
+  <text x="586" y="318" font-size="11">Ejecuta el caso de uso con datos tipados</text>
+
+  <line x1="750" y1="355" x2="920" y2="355" stroke="#111827" marker-end="url(#a)"/>
+  <text x="756" y="348" font-size="11">Consulta o actualiza el estado</text>
+
+  <line x1="920" y1="385" x2="750" y2="385" stroke="#111827" stroke-dasharray="5 4" marker-end="url(#r)"/>
+  <text x="756" y="378" font-size="11">Devuelve el estado del juego</text>
+
+  <line x1="750" y1="415" x2="580" y2="415" stroke="#111827" stroke-dasharray="5 4" marker-end="url(#r)"/>
+  <text x="586" y="408" font-size="11">Resultado del mensaje</text>
+
+  <line x1="580" y1="445" x2="410" y2="445" stroke="#111827" marker-end="url(#a)"/>
+  <text x="416" y="438" font-size="11">Escribe cero, tipo y contenido</text>
+
+  <line x1="410" y1="475" x2="240" y2="475" stroke="#111827" stroke-dasharray="5 4" marker-end="url(#r)"/>
+  <text x="246" y="468" font-size="11">Arreglo de bytes</text>
+
+  <line x1="240" y1="508" x2="70" y2="508" stroke="#111827" stroke-dasharray="5 4" marker-end="url(#r)"/>
+  <text x="76" y="501" font-size="11">Respuesta binaria al cliente</text>
+</svg>

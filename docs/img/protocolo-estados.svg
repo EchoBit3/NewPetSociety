@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="900" height="500" fill="#FFFFFF"/>
+
+  <circle cx="430" cy="26" r="8" fill="#111827"/>
+
+  <rect x="330" y="56" width="200" height="50" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="430" y="87" text-anchor="middle">Recibido</text>
+
+  <rect x="330" y="156" width="200" height="50" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="430" y="187" text-anchor="middle">Enrutado</text>
+
+  <rect x="330" y="256" width="200" height="50" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="430" y="287" text-anchor="middle">En proceso</text>
+
+  <rect x="330" y="356" width="200" height="50" rx="8" fill="#E6F4EA" stroke="#111827"/>
+  <text x="430" y="387" text-anchor="middle">Respondido</text>
+
+  <rect x="660" y="206" width="180" height="50" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="750" y="237" text-anchor="middle">Rechazado</text>
+
+  <circle cx="430" cy="446" r="8" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="430" cy="446" r="4" fill="#111827"/>
+
+  <line x1="430" y1="34" x2="430" y2="56" stroke="#111827" marker-end="url(#a)"/>
+
+  <line x1="430" y1="106" x2="430" y2="156" stroke="#111827" marker-end="url(#a)"/>
+  <text x="440" y="136" font-size="11">leer [cabecera válida]</text>
+
+  <line x1="430" y1="206" x2="430" y2="256" stroke="#111827" marker-end="url(#a)"/>
+  <text x="440" y="236" font-size="11">resolver [tipo conocido]</text>
+
+  <line x1="430" y1="306" x2="430" y2="356" stroke="#111827" marker-end="url(#a)"/>
+  <text x="440" y="336" font-size="11">ejecutar [caso de uso exitoso]</text>
+
+  <path d="M530,81 H600 V231 H660" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="606" y="73" font-size="11">descartar [cabecera incompleta]</text>
+
+  <path d="M530,181 H630 V231 H660" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="636" y="173" font-size="11">descartar [tipo desconocido]</text>
+
+  <path d="M530,281 H640 V231 H660" fill="none" stroke="#111827" marker-end="url(#a)"/>
+  <text x="646" y="273" font-size="11">abortar [dato fuera de rango]</text>
+
+  <line x1="750" y1="256" x2="750" y2="300" stroke="#111827"/>
+  <path d="M750,300 V480 H440 V454" fill="none" stroke="#111827" marker-end="url(#a)"/>
+
+  <path d="M430,406 V446" fill="none" stroke="#111827" marker-end="url(#a)"/>
+
+  <text x="40" y="480" font-size="11" fill="#374151">cada transición se lee: evento [guarda]; sin rótulo, la transición se dispara al terminar el estado</text>
+</svg>
