@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#111827">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="900" height="430" fill="#FFFFFF"/>
+
+  <rect x="25" y="50" width="350" height="150" fill="#FFFFFF" stroke="#111827"/>
+  <polygon points="25,50 37,38 387,38 375,50" fill="#FFFFFF" stroke="#111827"/>
+  <polygon points="375,50 387,38 387,188 375,200" fill="#FFFFFF" stroke="#111827"/>
+  <text x="40" y="70" font-size="11" fill="#374151">«device» Estación del jugador</text>
+  <rect x="50" y="85" width="300" height="60" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="60" y="103" font-size="10" fill="#374151">«artifact»</text>
+  <text x="200" y="122" text-anchor="middle">Navegador con Ruffle</text>
+  <text x="200" y="137" text-anchor="middle" font-size="11">cliente original en Flash</text>
+
+  <rect x="525" y="50" width="350" height="345" fill="#FFFFFF" stroke="#111827"/>
+  <polygon points="525,50 537,38 887,38 875,50" fill="#FFFFFF" stroke="#111827"/>
+  <polygon points="875,50 887,38 887,383 875,395" fill="#FFFFFF" stroke="#111827"/>
+  <text x="540" y="70" font-size="11" fill="#374151">«executionEnvironment» Máquina del servidor</text>
+  <rect x="550" y="85" width="300" height="60" rx="8" fill="#E8F0FE" stroke="#111827"/>
+  <text x="560" y="103" font-size="10" fill="#374151">«artifact»</text>
+  <text x="700" y="122" text-anchor="middle">emulador.jar</text>
+  <text x="700" y="137" text-anchor="middle" font-size="11">servidor HTTP en el puerto 8881</text>
+
+  <rect x="550" y="165" width="300" height="60" rx="8" fill="#E6F4EA" stroke="#111827"/>
+  <text x="560" y="183" font-size="10" fill="#374151">«artifact»</text>
+  <text x="700" y="202" text-anchor="middle">Partidas en disco</text>
+  <text x="700" y="217" text-anchor="middle" font-size="11">un archivo llamado profile</text>
+
+  <rect x="550" y="245" width="300" height="60" rx="8" fill="#FCE7F3" stroke="#111827" stroke-dasharray="5 4"/>
+  <text x="560" y="263" font-size="10" fill="#374151">«artifact» opcional</text>
+  <text x="700" y="282" text-anchor="middle">Caché compartida y base</text>
+  <text x="700" y="297" text-anchor="middle" font-size="11">pueden vivir en otro nodo</text>
+
+  <rect x="550" y="325" width="300" height="55" rx="8" fill="#FCE7F3" stroke="#111827" stroke-dasharray="5 4"/>
+  <text x="560" y="343" font-size="10" fill="#374151">«artifact» opcional</text>
+  <text x="700" y="362" text-anchor="middle">Módulo nativo en C++</text>
+  <text x="700" y="376" text-anchor="middle" font-size="11">solo si la medición lo exige</text>
+
+  <line x1="387" y1="120" x2="525" y2="120" stroke="#111827" marker-end="url(#a)"/>
+  <text x="450" y="112" text-anchor="middle" font-size="11">HTTP, puerto 8881</text>
+</svg>
