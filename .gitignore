@@ -1,0 +1,33 @@
+# Arnes local del agente
+agent.md
+memory.md
+plan.md
+hitos.md
+init.sh
+
+# Referencias visuales externas
+docs/referencias/
+
+# Python (herramientas de soporte: inspeccion de .pet)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Partidas y datos de jugadores
+*.pet
+*.nofil
+*.db
+*.sqlite
+
+# IDE / Sistema operativo
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+*.log
