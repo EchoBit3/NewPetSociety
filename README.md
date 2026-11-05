@@ -25,9 +25,10 @@ solo archivo del juego.
 
 ## Estado actual
 
-El proyecto tiene la **documentación de arquitectura publicada** y todavía no tiene código de
-servidor: primero se define el alcance, la arquitectura y el orden de las etapas. No hay versiones
-para descargar ni instrucciones de instalación.
+El proyecto tiene la **documentación de arquitectura publicada** y el esqueleto del servidor:
+compila, arranca y todavía no implementa juego. Primero se define el alcance, la arquitectura y el
+orden de las etapas; el calendario completo está en la documentación del proyecto. No hay versiones
+para descargar.
 
 Decisiones ya cerradas:
 
