@@ -45,5 +45,6 @@ infraestructura: pide la interfaz y la implementación entra por configuración.
 Nadie depende de las herramientas y las herramientas no se publican con el servidor: si un día
 dejan de existir, el juego sigue funcionando.
 
-Pendiente de definir: el nombre raíz de los paquetes se fija cuando exista el archivo de
-compilación, en la etapa de estructura del repositorio.
+Raíz de los paquetes: `cl.echobit.juego`, con un subpaquete por módulo (`protocolo`, `dominio`,
+`aplicacion`, `infraestructura`, `herramientas`). El monolito se compila como un solo artefacto con
+un `pom.xml`; la dirección de dependencias se verifica con pruebas, no con módulos separados.
